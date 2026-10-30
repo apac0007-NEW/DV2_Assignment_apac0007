@@ -4,7 +4,7 @@
   "config": {
     "view": {
       "stroke": null,
-      "fill": "#0e1a33"
+      "fill": "#071a36"
     },
     "font": "Source Serif 4",
     "axis": {
@@ -15,8 +15,8 @@
       "labelFontSize": 13,
       "titleFontSize": 13,
       "titleFontWeight": "normal",
-      "labelColor": "#39425a",
-      "titleColor": "#39425a",
+      "labelColor": "#14294b",
+      "titleColor": "#14294b",
       "gridColor": "#e8ebf3",
       "labelPadding": 6,
       "titlePadding": 10
@@ -27,8 +27,8 @@
       "labelFontSize": 12,
       "titleFontSize": 12,
       "titleFontWeight": "normal",
-      "labelColor": "#39425a",
-      "titleColor": "#1d2540",
+      "labelColor": "#14294b",
+      "titleColor": "#14294b",
       "titleLimit": 320
     },
     "text": {
@@ -66,7 +66,7 @@
         "y": 0,
         "x2": "width",
         "y2": "height",
-        "fill": "#0e1a33",
+        "fill": "#071a36",
         "stroke": null
       }
     },
@@ -79,8 +79,8 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#24395f",
-        "stroke": "#7891bd",
+        "fill": "#102e59",
+        "stroke": "#1f6fc0",
         "strokeWidth": 1.35
       }
     },
@@ -118,15 +118,15 @@
             "empty": false,
             "value": "#ffffff"
           },
-          "value": "#10213b"
+          "value": "#08264a"
         },
         "strokeWidth": {
           "condition": {
             "param": "hov",
             "empty": false,
-            "value": 2.5
+            "value": 2.4
           },
-          "value": 1.05
+          "value": 0.85
         },
         "color": {
           "field": "properties.types",
@@ -140,11 +140,11 @@
               6
             ],
             "range": [
-              "#2a1245",
-              "#7b1f6b",
-              "#d6336c",
-              "#ff8a5c",
-              "#ffd37a"
+              "#32164f",
+              "#812277",
+              "#e22e79",
+              "#ff805c",
+              "#ffd36f"
             ],
             "clamp": true
           },
@@ -161,9 +161,7 @@
               4,
               5,
               6
-            ],
-            "labelColor": "#39425a",
-            "titleColor": "#1d2540"
+            ]
           }
         },
         "tooltip": [
@@ -187,40 +185,21 @@
             "name": "CBD",
             "lat": -27.4698,
             "lon": 153.0251
-          },
-          {
-            "name": "Chermside",
-            "lat": -27.386,
-            "lon": 153.034
-          },
-          {
-            "name": "Indooroopilly",
-            "lat": -27.5,
-            "lon": 152.973
-          },
-          {
-            "name": "Carindale",
-            "lat": -27.505,
-            "lon": 153.1
-          },
-          {
-            "name": "Sunnybank",
-            "lat": -27.576,
-            "lon": 153.058
           }
         ]
       },
       "mark": {
         "type": "text",
         "fontSize": 13,
-        "fontStyle": "italic",
+        "fontStyle": "normal",
         "color": "#ffffff",
-        "stroke": "#0b1830",
-        "strokeWidth": 1.35,
+        "stroke": "#071a36",
+        "strokeWidth": 1.8,
         "paintOrder": "stroke",
         "align": "left",
         "dx": 7,
         "dy": -7,
+        "font": "Source Serif 4",
         "fontWeight": 700,
         "strokeJoin": "round"
       },
@@ -231,6 +210,244 @@
         },
         "longitude": {
           "field": "lon",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "name",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Chermside"
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    153.034,
+                    -27.386
+                  ],
+                  [
+                    153.0425,
+                    -27.3825
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Indooroopilly"
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    152.973,
+                    -27.5
+                  ],
+                  [
+                    152.96,
+                    -27.4965
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Carindale"
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    153.1,
+                    -27.505
+                  ],
+                  [
+                    153.109,
+                    -27.5015
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Sunnybank"
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    153.058,
+                    -27.576
+                  ],
+                  [
+                    153.067,
+                    -27.5725
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "filled": false,
+        "stroke": "#f5fbff",
+        "strokeWidth": 1.35,
+        "opacity": 0.95
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -27.386,
+            "lon": 153.034
+          },
+          {
+            "lat": -27.5,
+            "lon": 152.973
+          },
+          {
+            "lat": -27.505,
+            "lon": 153.1
+          },
+          {
+            "lat": -27.576,
+            "lon": 153.058
+          }
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 72,
+        "color": "#ffffff",
+        "stroke": "#0a1d3b",
+        "strokeWidth": 1.5,
+        "opacity": 1
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "name": "Chermside",
+            "lat": -27.386,
+            "lon": 153.034,
+            "labelLat": -27.3825,
+            "labelLon": 153.0425,
+            "align": "left",
+            "dx": 5,
+            "dy": -4
+          },
+          {
+            "name": "Carindale",
+            "lat": -27.505,
+            "lon": 153.1,
+            "labelLat": -27.5015,
+            "labelLon": 153.109,
+            "align": "left",
+            "dx": 5,
+            "dy": -4
+          },
+          {
+            "name": "Sunnybank",
+            "lat": -27.576,
+            "lon": 153.058,
+            "labelLat": -27.5725,
+            "labelLon": 153.067,
+            "align": "left",
+            "dx": 5,
+            "dy": -4
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Source Serif 4",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#ffffff",
+        "stroke": "#071a36",
+        "strokeWidth": 1.8,
+        "strokeJoin": "round",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5
+      },
+      "encoding": {
+        "latitude": {
+          "field": "labelLat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "labelLon",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "name",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "name": "Indooroopilly",
+            "lat": -27.5,
+            "lon": 152.973,
+            "labelLat": -27.4965,
+            "labelLon": 152.96,
+            "align": "right",
+            "dx": -5,
+            "dy": -4
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Source Serif 4",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#ffffff",
+        "stroke": "#071a36",
+        "strokeWidth": 1.8,
+        "strokeJoin": "round",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -5
+      },
+      "encoding": {
+        "latitude": {
+          "field": "labelLat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "labelLon",
           "type": "quantitative"
         },
         "text": {
