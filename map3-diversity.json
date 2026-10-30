@@ -32,8 +32,7 @@
       "titleLimit": 320
     },
     "text": {
-      "font": "Source Serif 4",
-      "color": "#ffffff"
+      "font": "Source Serif 4"
     }
   },
   "usermeta": {
@@ -183,7 +182,7 @@
       "data": {
         "values": [
           {
-            "name": "CBD",
+            "name": "Brisbane CBD",
             "lat": -27.4698,
             "lon": 153.0251
           },
@@ -240,31 +239,8 @@
             "dx": 8,
             "dy": -8,
             "color": "#ffffff",
-            "stroke": "#06172f",
-            "strokeWidth": 1.0,
-            "strokeJoin": "round"
-          },
-          "encoding": {
-            "text": {
-              "field": "name",
-              "type": "nominal"
-            },
-            "color": {
-              "value": "#ffffff"
-            }
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "fontSize": 13,
-            "fontWeight": 700,
-            "align": "left",
-            "dx": 8,
-            "dy": -8,
-            "color": "#ffffff",
-            "stroke": "#06172f",
-            "strokeWidth": 1.0,
+            "stroke": "#071a36",
+            "strokeWidth": 1.5,
             "strokeJoin": "round"
           },
           "encoding": {
